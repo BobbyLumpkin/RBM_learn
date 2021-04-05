@@ -1,3 +1,13 @@
+##############################################################################################
+# Filename: RBM_learn.py
+#
+# Purpose: A small library for defining and training Restricted Boltzmann Machine objects
+#
+# Author(s): Bobby (Robert) Lumpkin
+#
+# Library Dependencies: numpy
+##############################################################################################
+
 ## Load modules
 import numpy as np
 import pandas as pd
