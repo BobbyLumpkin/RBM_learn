@@ -10,7 +10,6 @@
 
 ## Load modules
 import numpy as np
-import pandas as pd
 from scipy.special import expit
 
 class rbm_network:
