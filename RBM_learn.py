@@ -5,7 +5,7 @@
 #
 # Author(s): Bobby (Robert) Lumpkin
 #
-# Library Dependencies: numpy
+# Library Dependencies: numpy, SciPy
 ##############################################################################################
 
 ## Load modules
