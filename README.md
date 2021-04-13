@@ -46,7 +46,10 @@ A small library for defining and training Restricted Boltzmann Machines. This wa
 
 * `RBM_learn_adaptive(self, v_0, learning_rate, num_epochs, tau, verbose = 1)`: trains the RBM network object using search-then-converge, adaptive learning rate approach. Namely the learning rate for epoch <img src="https://render.githubusercontent.com/render/math?math=n"> is given by 
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=%5Ceta%28n%29%20%3D%20%5Cfrac%7B%5Ceta_0%7D%7B1%20%2B%20n%2F%5Ctau%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+<p align = 'center'>
+    ![equation](http://www.sciweavers.org/tex2img.php?eq=%5Ceta%28n%29%20%3D%20%5Cfrac%7B%5Ceta_0%7D%7B1%20%2B%20n%2F%5Ctau%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+</p>
+
 ---
 
 **NOTE:** The "Description of Objects/Methods" section is still being completed.
