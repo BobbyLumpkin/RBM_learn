@@ -4,6 +4,13 @@ A small library for defining and training Restricted Boltzmann Machines. This wa
 
 ---
 
+## Important Files for Use
+
+1. **RBM_learnpy:** the library for defining and training Restricted Boltzmann Machines
+2. **Collaborative_Filtering_with_RBMs.ipynb:** 
+
+---
+
 ## Description of Objects/Methods
 
 * `RBM_network(n_v, n_h)`: instantiates an RBM network object.    
@@ -50,4 +57,4 @@ A small library for defining and training Restricted Boltzmann Machines. This wa
 
 ---
 
-**NOTE:** The "Description of Objects/Methods" section is still being completed.
+**NOTE:** The "Important Files for Use" section is still being completed.
