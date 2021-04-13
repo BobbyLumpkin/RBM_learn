@@ -27,6 +27,24 @@ A small library for defining and training Restricted Boltzmann Machines. This wa
     - W: the weight matrix for the network
     - layer_array: an array where each row corresponds to the layer of an instance. Each row must correspond to a layer of the same type (i.e. all hidden layers or all visible layers).
 
+* `update_weights(W, v_0, learning_rate)`: implement a single step of weight updates using contrastive convergence
+    Arguments:
+    - W: the weight matrix for the network
+    - v_0: a matrix of rows consisting each of which contains the initial visible layer for an instance (the design matrix)
+    - learning_rate: the learning rate to be used for weight updates
+
+* `MAE(v_0)`: computes the generated visible layers for each instance using the current weight matrix (W) and returns the mean absolute error over the entire dataset
+    Arguments:
+    - v_0: a matrix of rows consisting each of which contains the initial visible layer for an instance (the design matrix)
+
+* `RBM_learn(self, v_0, learning_rate, num_epochs, verbose = 1)`: trains the RBM network object using contrastive divergence
+    Arguments:
+    - v_0: a matrix of rows consisting each of which contains the initial visible layer for an instance (the design matrix)
+    - learning_rate: the learning rate to be used for weight updates
+    - num_epochs: the desired number of epochs to train for
+    - verbose: a binary indicator. '1' provides MAE updates after each epoch. '0' runs silently, without real-time updates. (Default is '1')
+
+* `RBM_learn_adaptive(self, v_0, learning_rate, num_epochs, tau, verbose = 1)`: trains the RBM network object using search-then-converge, adaptive learning rate approach. Namely the learning rate for epoch <img src="https://render.githubusercontent.com/render/math?math=n"> is given by <img src="https://render.githubusercontent.com/render/math?math=\eta(n) = \frac{\eta_0}{1 + (n/\tau)}">
 ---
 
 **NOTE:** The "Description of Objects/Methods" section is still being completed.
